@@ -4,16 +4,16 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Album from './pages/Album'
-import AlbumDetail from './pages/AlbumDetail'
+import Albums from './pages/Albums'
+import Photos from './pages/Photos'
 
 export default function App() {
   return (
     <Router>
       <div>
         <Switch>
-          <Route exact path="/" component={Album}></Route>
-          <Route path="/detail/:id" component={AlbumDetail}></Route>
+          <Route exact path="/" component={Albums}></Route>
+          <Route path="/detail/:id" component={Photos}></Route>
         </Switch>
       </div>
     </Router>
